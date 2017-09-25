@@ -35,8 +35,7 @@ def autocontrast(src_path, dst_path, white_perc, black_perc):
     dst = np.dstack(dst).astype(np.uint8)
 
     cv2.imwrite(dst_path, dst)
-    pass
-
+    return
 
 if __name__ == '__main__':
     assert len(argv) == 5
